@@ -29,8 +29,10 @@ const Hero = () => {
       </div>
 
       {/* Right Column: Team Image */}
-      import teamPhoto from '../assets/teamphoto.jpeg'; // adjust path relative to your component
+      // At the top of your component file
+import teamPhoto from '../assets/teamphoto.jpeg'; // adjust the path based on your file location
 
+// Inside your component's return
 <div className="relative z-10 md:w-1/2 mt-8 md:mt-0">
   <img
     src={teamPhoto}
@@ -38,6 +40,7 @@ const Hero = () => {
     className="rounded-xl shadow-lg mx-auto"
   />
 </div>
+
 
     </section>
   );
