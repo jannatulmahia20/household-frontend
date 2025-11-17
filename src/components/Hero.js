@@ -29,13 +29,15 @@ const Hero = () => {
       </div>
 
       {/* Right Column: Team Image */}
-      <div className="relative z-10 md:w-1/2 mt-8 md:mt-0">
-        <img
-          src="https://images.unsplash.com/photo-1581092334445-8d64b18ff408?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600"
-          alt="Our Professionals"
-          className="rounded-xl shadow-lg mx-auto"
-        />
-      </div>
+      import teamPhoto from '../assets/teamphoto.jpeg'; // adjust path relative to your component
+
+<div className="relative z-10 md:w-1/2 mt-8 md:mt-0">
+  <img
+    src={teamPhoto}
+    alt="Our Professionals"
+    className="rounded-xl shadow-lg mx-auto"
+  />
+</div>
 
     </section>
   );
